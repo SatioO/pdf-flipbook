@@ -2582,12 +2582,14 @@ var PDFPresentationMode = (function PDFPresentationModeClosure() {
      * @private
      */
     _exit: function PDFPresentationMode_exit() {
+      
       var page = this.pdfViewer.currentPageNumber;
       this.container.classList.remove(ACTIVE_SELECTOR);
-
+      $("#toolbarContainer").show()
       // Ensure that the correct page is scrolled into view when exiting
       // Presentation Mode, by waiting until fullscreen mode is disabled.
       setTimeout(function exitPresentationModeTimeout() {
+        
         this.active = false;
         this._removeFullscreenChangeListeners();
         this._notifyStateChange();
@@ -7372,6 +7374,7 @@ var PDFViewerApplication = {
     if (!this.pdfPresentationMode) {
       return;
     }
+   $("#toolbarContainer").hide()
     this.pdfPresentationMode.request();
   },
 
@@ -7907,6 +7910,7 @@ function handleMouseWheel(evt) {
 
   var pdfViewer = PDFViewerApplication.pdfViewer;
   if (pdfViewer.isInPresentationMode) {
+    
     evt.preventDefault();
     PDFViewerApplication.scrollPresentationMode(ticks *
         MOUSE_WHEEL_DELTA_FACTOR);
@@ -7937,6 +7941,7 @@ function handleMouseWheel(evt) {
     }
   }
 }
+
 
 window.addEventListener('DOMMouseScroll', handleMouseWheel);
 window.addEventListener('mousewheel', handleMouseWheel);
@@ -8064,6 +8069,7 @@ window.addEventListener('keydown', function keydown(evt) {
             pdfViewer.currentScaleValue !== 'page-fit') {
           break;
         }
+        
       /* in presentation mode */
       /* falls through */
       case 37: // left arrow
@@ -8077,7 +8083,7 @@ window.addEventListener('keydown', function keydown(evt) {
         PDFViewerApplication.page--;
         handled = true;
         break;
-      case 27: // esc key
+      case 27: // esc key      
         if (SecondaryToolbar.opened) {
           SecondaryToolbar.close();
           handled = true;
