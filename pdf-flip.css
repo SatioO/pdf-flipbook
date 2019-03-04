@@ -100,12 +100,19 @@
   text-align: center;
 }
 
-
 .toolbar #toolbarViewerLeft > *,
 .toolbar #toolbarViewerMiddle > *,
 .toolbar #toolbarViewerRight > *,
 .toolbar .findbar > * {
-  float: none;
+  float: none !important;
   display: inline-block;
   vertical-align: middle;
+}
+
+/* #toolbarViewer button {
+  float: none;
+} */
+
+#toolbarViewerLeft {
+  position: relative !important;
 }
