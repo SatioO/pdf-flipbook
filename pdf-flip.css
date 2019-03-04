@@ -4,11 +4,17 @@
   height: auto;
   margin-left: -50%;
 }
+#documentProperties {
+  border: 0;
+}
 
 #magazineContainer {
   padding-top: 10px;
   text-align: center;
   overflow: hidden;
+}
+#download {
+  border: 0;
 }
 
 #magazine {
@@ -113,6 +119,9 @@
   float: none;
 } */
 
-#toolbarViewerLeft {
+#toolbarViewerLeft,
+#toolbarViewerRight {
   position: relative !important;
+  display: inline-block;
+  vertical-align: middle; 
 }
