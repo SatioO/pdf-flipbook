@@ -129,3 +129,11 @@
   float: none !important;
   right: auto !important;
 }
+
+#presentationMode {
+  background-image: url(../images/toolbarButton-presentationMode.png);
+}
+
+#presentationMode::before {
+  display: none !important;
+}
