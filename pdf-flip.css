@@ -120,8 +120,12 @@
 } */
 
 #toolbarViewerLeft,
-#toolbarViewerRight {
+#toolbarViewerRight,
+.outerCenter {
   position: relative !important;
   display: inline-block;
-  vertical-align: middle; 
+  vertical-align: middle;
+  padding: 0 10px;
+  float: none !important;
+  right: auto !important;
 }
