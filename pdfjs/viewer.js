@@ -1009,38 +1009,38 @@ var PDFFindBar = (function PDFFindBarClosure() {
       self.toggle();
     });
 
-    this.findField.addEventListener('input', function() {
-      self.dispatchEvent('');
-    });
+    // this.findField.addE/ventListener('input', function() {
+    //   self.dispatchEvent('');
+    // });
 
-    this.bar.addEventListener('keydown', function(evt) {
-      switch (evt.keyCode) {
-        case 13: // Enter
-          if (evt.target === self.findField) {
-            self.dispatchEvent('again', evt.shiftKey);
-          }
-          break;
-        case 27: // Escape
-          self.close();
-          break;
-      }
-    });
+    // this.bar.addEventListener('keydown', function(evt) {
+    //   switch (evt.keyCode) {
+    //     case 13: // Enter
+    //       if (evt.target === self.findField) {
+    //         self.dispatchEvent('again', evt.shiftKey);
+    //       }
+    //       break;
+    //     case 27: // Escape
+    //       self.close();
+    //       break;
+    //   }
+    // });
 
-    this.findPreviousButton.addEventListener('click', function() {
-      self.dispatchEvent('again', true);
-    });
+    // this.findPreviousButton.addEventListener('click', function() {
+    //   self.dispatchEvent('again', true);
+    // });
 
-    this.findNextButton.addEventListener('click', function() {
-      self.dispatchEvent('again', false);
-    });
+    // this.findNextButton.addEventListener('click', function() {
+    //   self.dispatchEvent('again', false);
+    // });
 
-    this.highlightAll.addEventListener('click', function() {
-      self.dispatchEvent('highlightallchange');
-    });
+    // this.highlightAll.addEventListener('click', function() {
+    //   self.dispatchEvent('highlightallchange');
+    // });
 
-    this.caseSensitive.addEventListener('click', function() {
-      self.dispatchEvent('casesensitivitychange');
-    });
+    // this.caseSensitive.addEventListener('click', function() {
+    //   self.dispatchEvent('casesensitivitychange');
+    // });
   }
 
   PDFFindBar.prototype = {
