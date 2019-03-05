@@ -122,7 +122,7 @@
 #toolbarViewerLeft,
 #toolbarViewerRight,
 .outerCenter {
-  position: relative !important;
+  position: static !important;
   display: inline-block;
   vertical-align: middle;
   padding: 0 10px;
@@ -132,8 +132,35 @@
 
 #presentationMode {
   background-image: url(../images/toolbarButton-presentationMode.png);
+  width: 17px;
+  height: 17px;
 }
 
 #presentationMode::before {
   display: none !important;
+}
+
+#secondaryToolbarToggle {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+}
+
+#secondaryToolbar {
+  top: auto;
+  bottom: 40px;
+}
+
+.doorHanger:before,
+.doorHangerRight:before {
+  border-bottom: 0;
+  border-top-color: hsla(0, 0%, 0%, 0.5);
+  bottom: -10px;
+}
+
+.doorHanger:after,
+.doorHangerRight:after {
+  border-bottom: 0;
+  border-top-color: hsla(0, 0%, 32%, 0.99);
+  bottom: -8px;
 }
