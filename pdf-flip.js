@@ -5,7 +5,7 @@
     currentScale: 1,
     layout: "double",
     maxScale: 2,
-    audioSrc: "sound/page-flip.mp3",
+    //audioSrc: "sound/page-flip.mp3",
     init: function() {
         $(window).bind("keydown", function(e) {
             if (e.target && e.target.tagName.toLowerCase() != "input") {
@@ -46,7 +46,6 @@
             "click",
             ".toolbar #next, .directions .next-button",
             function(e) {
-                console.log(PDFViewerApplication);
                 $("#magazine").turn("next");
                 return false;
             }
@@ -199,6 +198,7 @@
             }
         );
     },
+
     resizeViewport: function() {
         var width = $(window).width(),
             height = $(window).height(),
