@@ -373,6 +373,11 @@ html[dir="rtl"] #sidebarContainer {
     transition-property: right;
     right: -200px;
 }
+#presentationMode,
+#toolbarViewerRight {
+    display: none !important;
+    border: 0px;
+}
 
 #outerContainer.sidebarMoving > #sidebarContainer,
 #outerContainer.sidebarOpen > #sidebarContainer {
