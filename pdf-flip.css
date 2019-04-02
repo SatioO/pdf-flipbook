@@ -9,8 +9,8 @@
 }
 
 #magazineContainer {
-    /* padding-top: 10px;
-    margin-bottom: 40px; */
+    /* padding-top: 10px; */
+    /* margin-bottom: 40px; */
     text-align: center;
     overflow: hidden;
     margin: 20px 0px 70px 0px;
@@ -23,7 +23,7 @@
 #magazine {
     margin: 0 auto !important;
     text-align: center;
-    margin-bottom: 50px !important;
+    height: 100% !important;
 }
 
 #magazine .page {
@@ -33,6 +33,7 @@
 
 #magazine .page-wrapper {
     background: url(pics/loader.gif) center no-repeat #fff;
+    height: 100% !important;
 }
 
 #magazineContainer .zoom-in .next-button,
