@@ -9,12 +9,12 @@
 }
 
 #magazineContainer {
-    /* padding-top: 10px; */
+    padding-top: 10px;
     /* margin-bottom: 40px; */
     text-align: center;
     overflow: hidden;
-    margin: 20px 0px 70px 0px;
-    height: calc(100% - 70px );
+    /* margin: 20px 0px 70px 0px;
+    height: calc(100% - 70px ); */
 }
 #download {
     border: 0;
@@ -32,7 +32,7 @@
 #magazine {
     margin: 0 auto !important;
     text-align: center;
-    height: 100% !important;
+    /* height: 100% !important; */
 }
 
 #magazine .page {
@@ -42,7 +42,7 @@
 
 #magazine .page-wrapper {
     background: url(pics/loader.gif) center no-repeat #fff;
-    height: 100% !important;
+    /* height: 100% !important; */
 }
 
 #magazineContainer .zoom-in .next-button,
