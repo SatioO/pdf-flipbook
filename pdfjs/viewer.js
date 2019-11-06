@@ -6536,12 +6536,8 @@ var PDFViewerApplication = {
 
   zoomIn: function pdfViewZoomIn(ticks) {
   
-      
-    const pos={
-      x:100,
-      y:100
-    }
-    $('#magazineContainer').zoom("zoomIn",pos)
+    $("#magazineContainer").zoom("zoomIn");
+   
     // var newScale = this.pdfViewer.currentScale;
     // do {
     //   newScale = (newScale * DEFAULT_SCALE_DELTA).toFixed(2);
@@ -6554,10 +6550,11 @@ var PDFViewerApplication = {
   zoomOut: function pdfViewZoomOut(ticks) {
 
     const pos={
-      x:0,
-      y:0
+      x:50,
+      y:50
     }
-    $('#magazineContainer').zoom("zoomOut",pos)
+    // $("#magazine").removeClass("zoom-in");
+    $('#magazineContainer').zoom("zoomOut")
     // var newScale = this.pdfViewer.currentScale;
     // do {
     //   newScale = (newScale / DEFAULT_SCALE_DELTA).toFixed(2);
